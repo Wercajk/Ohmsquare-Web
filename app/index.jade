@@ -1,31 +1,71 @@
 doctype
-//if lt IE 7
-    <html class="no-js lt-ie9 lt-ie8 lt-ie7">
-//if IE 7
-    <html class="no-js lt-ie9 lt-ie8">
-//if IE 8
-    <html class="no-js lt-ie9">
-// [if gt IE 8] <!
-html(class="no-js", lang="en")
-    // <![endif]
+html(lang="en")
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title Brunch with style
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width')
-    //
-       Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
+    title Ω² Ohm Square
+    meta(name='description', content='Ohm Square Official Website')
+    script window.brunch = window.brunch || {};
+    <!--[if lt IE 9]>
     script.
-      // Enable Brunch HTML/CSS Auto Reload
-      window.brunch = window.brunch || {};
+      window.location = "http://browsehappy.com/?locale=en"
+    <![endif]-->
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Marvel:700italic,700,400italic,400', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='css/app.css')
+
   body
     .container
-      include includes/menu
+      .row
+        .col-md-12
+          h1
+            .main-title Ohm Square
+            .subtitle OUR NEW ALBUM
+            .album-name A curious place between Souls and Atoms
+            .subtitle.out-now IS OUT NOW
+      .row.content
+        .col-md-4.col-md-offset-1
+          .we-love-music
+            .love-row
+              | We love music of the 60's<br>
+              | open minded, quirky
+            .love-row
+              | We love music of the 70's<br>
+              | when punk met disco (but not usually in the same room)
+            .love-row
+              | We love music of the 80's<br>
+              | when every band seemed to have it's own unique sound
+            .love-row
+              | We love music of the 90's<br>
+              | when nobody could sto.love-row dancing
+            .love-row
+              | We love music of the 00's<br>
+              | when all the styles got mixed together
+            .love-row Which brings us to our point…
+            .love-row WE LOVE MUSIC
+        .col-md-6
+          .row
+            .col-md-7
+              .we-love-description
+                p We love jazz, we love funk &amp; soul, we love house music, ambient music, we're partial to a bit of classical music, Folk when we're in the mood, from time to time Charlie even gets her old Goth records out &amp; Jan 2's gone all a bit techno at the mo…
+                p.move-down We ask you to <span class="red">download</span> it here on our website, share it, spread it, cook to it, jog to it … whichever way you like to LISTEN to it…
+                p We ask you to <span class="red">donate whatever you want</span> to us…<br> from  0 to $1 000 000  … it's really up to you.
+            .col-md-5
+              .album-sale-box
+                form
+                  .album-title A curious place between Souls and Atoms
+                  img.album-cover(src='images/album-cover.png')
+                  .pay-label Pay what you want:
+                  .pay-input
+                    span $
+                    input(type='number', value='5')
+                  .pay-submit
+                    button(type='submit') DOWNLOAD
+
+    a.skip-to-website(href='http://www.ohmsquare.com/News/') SKIP TO WEBSITE
+
     script(src='js/app.js', onload='require(\'initialize\');')
     script.
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      var _gaq=[['_setAccount','UA-38800351-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));

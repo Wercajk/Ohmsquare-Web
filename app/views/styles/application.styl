@@ -1,3 +1,128 @@
 @import 'nib'
 @import '_base'
 
+body
+  background url(/images/background-position.jpg)
+  background url(/images/background.jpg)
+  background-position center top
+  color #ffffff
+
+.skip-to-website
+  color #b4b4b4
+  font-family 'Oswald'
+  font-size 15px
+  position fixed
+  top 10px
+  right 10px
+  padding-right 30px
+  background url(/images/close.png)
+  background-repeat no-repeat
+  background-position right
+
+.skip-to-website:hover
+  color #fc3441
+  text-decoration none
+  background url(/images/close-hover.png)
+  background-repeat no-repeat
+  background-position right
+
+
+h1
+  margin-left 83px
+  margin-top 38px
+
+  .main-title
+    font-family 'Oswald'
+    font-size 18px
+
+  .subtitle
+    margin-top 10px
+    font-family 'Marvel'
+    font-size 35px
+    font-style italic
+    color #fc3441
+
+  .album-name
+    margin-left 33px
+    font-family 'Oswald'
+    font-size 28px
+
+  .out-now
+    margin-left 18px
+    margin-top 7px
+
+.content
+  margin-top 100px
+
+  .we-love-music
+    font-family 'Marvel'
+    font-size 17px
+    background rgba(0, 0, 0, 0.4)
+    padding 8px
+
+    .love-row
+      color #ee323e
+
+    .love-row::first-line
+      color #fff
+
+  .we-love-description
+    font-family 'Marvel'
+    font-size 15px
+    background rgba(0, 0, 0, 0.4)
+    padding 24px 14px
+
+    .move-down
+      margin-top 55px
+
+    .red
+      color #ee323e
+
+  .album-sale-box
+    background rgba(0, 0, 0, 0.4)
+    padding 24px 14px
+    font-family 'Oswald'
+    font-size 20px
+
+    .album-title
+      color #ee323e
+
+    .album-cover
+      margin-top 15px
+      margin-left 3px
+
+    .pay-label
+      margin-top 30px
+      margin-left 17px
+
+    input
+      margin-top 5px
+      margin-left 9px
+      font-family 'Oswald'
+      font-size 20px
+      border none
+
+    .pay-submit
+      margin-top 18px
+      margin-left 6px
+
+      button
+        color #fff
+        font-family 'Oswald'
+        font-size 16px
+        background #fd343f
+        padding 5px 20px
+        border none
+        letter-spacing 4px
+
+      button:hover
+        color #000
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
