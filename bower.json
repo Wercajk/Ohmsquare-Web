@@ -13,6 +13,7 @@
     "normalize-css": "~2.1.2",
     "imagesloaded": "~3.1.0",
     "navigator-detect.js": "~1.0.0",
-    "bootstrap": "~3.0.3"
+    "bootstrap": "~3.0.3",
+    "simplecart-js": "*"
   }
 }
