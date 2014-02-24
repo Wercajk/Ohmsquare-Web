@@ -1,10 +1,11 @@
 doctype
-html(lang="en")
+html(lang="en", xmlns:fb="http://ogp.me/ns/fb#")
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title Ω² Ohm Square
+    title Ω² Ohm Square - A curious place between Souls and Atoms OUT NOW!
     meta(name='description', content='Ohm Square Official Website')
+    meta(property='og:image', content='http://www.ohmsquare.com/images/album-cover.png')
     script window.brunch = window.brunch || {};
     <!--[if lt IE 9]>
     script.
@@ -36,7 +37,7 @@ html(lang="en")
               | when every band seemed to have it's own unique sound
             .love-row
               | We love music of the 90's<br>
-              | when nobody could sto.love-row dancing
+              | when nobody could stop dancing
             .love-row
               | We love music of the 00's<br>
               | when all the styles got mixed together
@@ -46,9 +47,12 @@ html(lang="en")
           .row
             .col-md-7
               .we-love-description
-                p We love jazz, we love funk &amp; soul, we love house music, ambient music, we're partial to a bit of classical music, Folk when we're in the mood, from time to time Charlie even gets her old Goth records out &amp; Jan 2's gone all a bit techno at the mo…
-                p.move-down We ask you to <span class="red">download</span> it here on our website, share it, spread it, cook to it, jog to it … whichever way you like to LISTEN to it…
+                p And we're happy to add our bit to the fine tapestry of, shall we call it, God's record collection…
+                p Our new album A curious place between Souls and Atoms is OUT NOW!
+                p.move-down We invite you to <span class="red">download</span> it here on our website, share it, spread it, cook to it, jog to it … whichever way you like to LISTEN to it…
                 p We ask you to <span class="red">donate whatever you want</span> to us…<br> from  0 to $1 000 000  … it's really up to you.
+                br
+                p <a href="https://soundcloud.com/infohmzzz">Listen on SoundCloud</a>
             .col-md-5
               .album-sale-box
                 form
@@ -57,11 +61,15 @@ html(lang="en")
                   .pay-label Pay what you want:
                   .pay-input
                     span $
-                    input(type='number', value='5')
+                    input(id='amount',type='number', value='10',required)
+                  .pay-input
+                    span &amp;
+                    input(id='email',type='email',placeholder="Enter email",required)
                   .pay-submit
                     button(type='submit') DOWNLOAD
 
-    a.skip-to-website(href='http://www.ohmsquare.com/News/') SKIP TO WEBSITE
+    //- a.skip-to-website(href='http://www.ohmsquare.com/News/') SKIP TO WEBSITE
+    a.wercajk(href='http://www.wercajk.com') Wercajk
 
     script(src='js/app.js', onload='require(\'initialize\');')
     script.
